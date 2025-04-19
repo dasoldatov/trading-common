@@ -1,4 +1,4 @@
-package algo.trading.tradingcommon.dto;
+package algo.trading.common.dto;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

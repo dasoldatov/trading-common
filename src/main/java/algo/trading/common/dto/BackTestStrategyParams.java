@@ -1,4 +1,4 @@
-package algo.trading.tradingcommon.dto;
+package algo.trading.common.dto;
 
 /**
  * Enum representing the parameters used in a backtest strategy. Defines various parameters related

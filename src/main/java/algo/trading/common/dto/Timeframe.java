@@ -1,4 +1,4 @@
-package algo.trading.tradingcommon.dto;
+package algo.trading.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
