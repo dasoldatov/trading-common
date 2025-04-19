@@ -36,15 +36,13 @@
         <tag>HEAD</tag>
     </scm>
 
-    <repositories>
+    <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/iDmitrySoldatov/alor-broker-spring-boot-starter</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
+            <name>trading-common</name>
+            <url>https://maven.pkg.github.com/iDmitrySoldatov/trading-common</url>
         </repository>
-    </repositories>
+    </distributionManagement>
 
     <build>
         <plugins>
