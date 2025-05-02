@@ -26,7 +26,7 @@ public class BackTestDto {
 
   /** List of instrument symbols involved in the backtest. */
   @NotEmpty(message = "Symbols list must not be empty")
-  private List<InstrumentSymbol> symbols;
+  private List<InstrumentDto> symbols;
 
   /** The exchange where the backtest will take place. */
   @NotNull(message = "Exchange must not be null")
