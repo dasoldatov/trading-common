@@ -42,5 +42,5 @@ public class BackTestDto {
   private Integer periodInMonth;
 
   /** Strategy parameters for the backtest. */
-  private Map<BackTestStrategyParams, String> params;
+  private Map<BackTestParams, String> params;
 }

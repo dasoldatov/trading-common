@@ -1,5 +1,7 @@
 package algo.trading.common.dto;
 
+import java.math.BigDecimal;
+import java.util.Map;
 import lombok.Builder;
 import lombok.Data;
 
@@ -10,10 +12,24 @@ import lombok.Data;
 @Data
 @Builder
 public class BackTestReportDto {
+  /** Unique backtest identifier. */
+  private Long id;
 
-  private Long id; // Unique identifier for the report
-  private String name; // Name of the backtest report
-  private BackTestProcessingParams params; // The parameters used in backtest processing
-  private BackTestStrategyStatsReportDto
-      strategyStats; // Strategy statistics report for the backtest
+  /** Name of the backtest strategy. */
+  private String name;
+
+  /** Instrument used in the backtest. */
+  private InstrumentDto instrument;
+
+  /** Timeframe for the backtest. */
+  private Timeframe timeframe;
+
+  /** Duration of the backtest in months. */
+  private Integer periodInMonths;
+
+  /** Stats report for the backtest. */
+  private BackTestStatsReportDto backTestStats;
+
+  /** The parameters used in backtest processing. */
+  private Map<BackTestParams, BigDecimal> params;
 }
