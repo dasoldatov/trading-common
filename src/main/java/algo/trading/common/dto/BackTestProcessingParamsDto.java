@@ -10,7 +10,7 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class BackTestProcessingParams {
+public class BackTestProcessingParamsDto {
   private BigDecimal stopLossCoefficient; // The stop loss coefficient for the backtest.
   private BigDecimal takeProfitCoefficient; // The take profit coefficient for the backtest.
   private BigDecimal commissionRate; // The commission rate applied during the backtest.
