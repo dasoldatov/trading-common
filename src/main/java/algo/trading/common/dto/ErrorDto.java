@@ -1,8 +1,10 @@
 package algo.trading.common.dto;
 
 import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Data transfer object representing an error. Contains error message, code, and timestamp of
@@ -10,6 +12,8 @@ import lombok.Data;
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ErrorDto {
   private String message; // The error message
   private int code; // The error code

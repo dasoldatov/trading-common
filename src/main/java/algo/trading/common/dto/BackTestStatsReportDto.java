@@ -1,12 +1,16 @@
 package algo.trading.common.dto;
 
 import java.math.BigDecimal;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /** Minimal and practical DTO for analyzing a trading strategy's backtest performance. */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class BackTestStatsReportDto {
 
   /** Net profit/loss from all trades combined. */
