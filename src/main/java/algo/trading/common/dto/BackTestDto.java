@@ -6,8 +6,10 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Map;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Data Transfer Object for a BackTest configuration. Contains the strategy name, selected
@@ -15,6 +17,8 @@ import lombok.Data;
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class BackTestDto {
   /** Unique identifier for the backtest configuration. */
   @NotNull(message = "Backtest ID must not be null")
@@ -27,10 +31,6 @@ public class BackTestDto {
   /** List of instrument symbols involved in the backtest. */
   @NotEmpty(message = "Symbols list must not be empty")
   private List<InstrumentDto> symbols;
-
-  /** The exchange where the backtest will take place. */
-  @NotNull(message = "Exchange must not be null")
-  private Exchange exchange;
 
   /** Timeframes used for the backtest. */
   @NotEmpty(message = "Timeframes list must not be empty")

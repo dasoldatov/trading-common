@@ -2,8 +2,10 @@ package algo.trading.common.dto;
 
 import java.math.BigDecimal;
 import java.util.Map;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Data Transfer Object for a BackTest report. Contains the details of the backtest, including the
@@ -11,6 +13,8 @@ import lombok.Data;
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class BackTestReportDto {
   /** Unique backtest identifier. */
   private Long id;
