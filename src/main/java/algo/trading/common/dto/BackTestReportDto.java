@@ -20,7 +20,7 @@ public class BackTestReportDto {
   private Long id;
 
   /** Name of the backtest strategy. */
-  private String name;
+  private StrategyName strategyName;
 
   /** Instrument used in the backtest. */
   private InstrumentDto instrument;
