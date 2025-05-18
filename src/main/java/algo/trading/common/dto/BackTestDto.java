@@ -25,8 +25,8 @@ public class BackTestDto {
   private Long id;
 
   /** The name of the trading strategy used in the backtest. */
-  @NotBlank(message = "Strategy name must not be blank")
-  private String strategyName;
+  @NotNull(message = "Strategy name must not be null")
+  private StrategyName strategyName;
 
   /** List of instrument symbols involved in the backtest. */
   @NotEmpty(message = "Symbols list must not be empty")
