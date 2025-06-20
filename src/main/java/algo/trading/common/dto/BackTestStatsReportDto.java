@@ -36,4 +36,7 @@ public class BackTestStatsReportDto {
 
   /** Sharpe ratio = average return / stdDev. */
   private BigDecimal sharpeRatio;
+
+  /** Average interest per month. */
+  private BigDecimal averageInterestPerMonth;
 }

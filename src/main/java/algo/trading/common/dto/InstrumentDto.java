@@ -24,4 +24,5 @@ public class InstrumentDto {
   private Currency currency;
   private BigDecimal pointPrice;
   private BigDecimal minStep;
+  private Long lotSize;
 }
