@@ -15,13 +15,12 @@ public class MarketOrder {
   private String guid;
   private Long strategyId;
   private String groupId;
-  private String marketOrderId;
+  private TradeDto openTrade;
   private String stopLossId;
   private String takeProfitId;
+  private TradeDto closeTrade;
   private String orderSide;
-  private BigDecimal price;
   private BigDecimal stopLoss;
   private BigDecimal takeProfit;
   private BigDecimal result;
-  private OrderState state;
 }
