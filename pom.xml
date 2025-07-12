@@ -10,7 +10,7 @@
 
     <groupId>algo.trading</groupId>
     <artifactId>trading-common</artifactId>
-    <version>0.12-SNAPSHOT</version>
+    <version>0.12</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -35,7 +35,7 @@
     <scm>
         <developerConnection>scm:git:https://github.com/iDmitrySoldatov/trading-common.git
         </developerConnection>
-        <tag>HEAD</tag>
+        <tag>trading-common-0.12</tag>
     </scm>
 
     <distributionManagement>
