@@ -39,4 +39,7 @@ public class BackTestStatsReportDto {
 
   /** Average interest per month. */
   private BigDecimal averageInterestPerMonth;
+
+  /** Intital drawdown in interests. */
+  private BigDecimal initialDrawdownInterest;
 }
