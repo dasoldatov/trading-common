@@ -33,7 +33,7 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/iDmitrySoldatov/trading-common.git
+        <developerConnection>scm:git:https://github.com/dasoldatov/trading-common.git
         </developerConnection>
         <tag>HEAD</tag>
     </scm>
@@ -42,7 +42,7 @@
         <repository>
             <id>github</id>
             <name>trading-common</name>
-            <url>https://maven.pkg.github.com/iDmitrySoldatov/trading-common</url>
+            <url>https://maven.pkg.github.com/dasoldatov/trading-common</url>
         </repository>
     </distributionManagement>
 
